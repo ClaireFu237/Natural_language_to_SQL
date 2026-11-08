@@ -1,0 +1,92 @@
+{
+  "mode": "single",
+  "started_at": "2026-08-19T12:23:08.530542+00:00",
+  "completed_at": "2026-08-19T12:23:14.840444+00:00",
+  "run_time_seconds": 6.310057,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "effort": "medium",
+  "schema_extraction": {
+    "step": "schema_extraction",
+    "duration_seconds": 1.73998,
+    "schema_path": "/Users/fuclaire/Desktop/holokai/7.17Test copy/DemoResult/20260819-122308-528721/schema_extraction/schema.sql",
+    "target_schema": "starbucks_mock"
+  },
+  "result": {
+    "status": "success",
+    "question_record": {
+      "instance_id": "single",
+      "question": "How many completed orders are there?"
+    },
+    "answer_path": "/Users/fuclaire/Desktop/holokai/7.17Test copy/DemoResult/20260819-122308-528721/outputs/answer.csv",
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "success",
+        "stderr": "",
+        "query_path": "/Users/fuclaire/Desktop/holokai/7.17Test copy/DemoResult/20260819-122308-528721/data_extraction/attempt_1/query.sql"
+      }
+    ],
+    "metrics": {
+      "started_at": "2026-08-19T12:23:10.276523+00:00",
+      "question": "How many completed orders are there?",
+      "instance_id": "single",
+      "target_schema": "starbucks_mock",
+      "steps": [
+        {
+          "step": "llm_query_generation",
+          "duration_seconds": 4.078994,
+          "attempt": 1,
+          "llm_output_time_seconds": 4.076879,
+          "token_consumption": {
+            "input_tokens": 10581,
+            "cached_input_tokens": 0,
+            "uncached_input_tokens": 10581,
+            "output_tokens": 72,
+            "thinking_tokens": 0,
+            "total_tokens": 10653
+          }
+        },
+        {
+          "step": "sql_execution",
+          "duration_seconds": 0.478471,
+          "attempt": 1,
+          "status": "success"
+        }
+      ],
+      "llm_steps": [
+        {
+          "step": "query_generation",
+          "attempt": 1,
+          "started_at": "2026-08-19T12:23:10.279397+00:00",
+          "completed_at": "2026-08-19T12:23:14.356214+00:00",
+          "provider": "openai",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "llm_output_time_seconds": 4.076879,
+          "time_consumption_seconds": 4.076879,
+          "token_consumption": {
+            "input_tokens": 10581,
+            "cached_input_tokens": 0,
+            "uncached_input_tokens": 10581,
+            "output_tokens": 72,
+            "thinking_tokens": 0,
+            "total_tokens": 10653
+          }
+        }
+      ],
+      "completed_at": "2026-08-19T12:23:14.839017+00:00",
+      "status": "success",
+      "question_processing_time_seconds": 4.562899,
+      "llm_output_time_seconds": 4.076879,
+      "token_consumption_total": {
+        "input_tokens": 10581,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 10581,
+        "output_tokens": 72,
+        "thinking_tokens": 0,
+        "total_tokens": 10653
+      }
+    }
+  }
+}

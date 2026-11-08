@@ -1,0 +1,6 @@
+{
+  "step": "schema_extraction",
+  "duration_seconds": 1.73998,
+  "schema_path": "/Users/fuclaire/Desktop/holokai/7.17Test copy/DemoResult/20260819-122308-528721/schema_extraction/schema.sql",
+  "target_schema": "starbucks_mock"
+}

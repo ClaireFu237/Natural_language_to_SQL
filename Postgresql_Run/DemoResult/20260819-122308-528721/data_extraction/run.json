@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "success",
+      "stderr": "",
+      "query_path": "/Users/fuclaire/Desktop/holokai/7.17Test copy/DemoResult/20260819-122308-528721/data_extraction/attempt_1/query.sql"
+    }
+  ]
+}
